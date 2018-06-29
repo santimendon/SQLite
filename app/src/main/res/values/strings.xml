@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MovieDB</string>
+
+    <string name="genre_prompt">Choose a genre</string>
+    <string-array name="spinnerGenreItems">
+        <item>Action</item>
+        <item>Drama</item>
+        <item>Thriller</item>
+        <item>Horror</item>
+        <item>Comedy</item>
+        <item>Romantic</item>
+        <item>Biography</item>
+        <item>Documentary</item>
+        <item>Animated</item>
+    </string-array>
+
+    <string name="language_prompt">Choose a language</string>
+    <string-array name="spinnerLanguageItems">
+        <item>English (US)</item>
+        <item>English (UK)</item>
+        <item>Hindi</item>
+        <item>Français</item>
+        <item>Español</item>
+        <item>Deutsche</item>
+    </string-array>
+
+    <!--Fonts-->
+    <string name="font_sans_serif_condensed">sans-serif-condensed</string>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/layout_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.android.smendon.sqlite.activities.AddRecordActivity"
+    tools:showIn="@layout/activity_add_record">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:text="Movie/TV series title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        tools:text="Name of Movie/TV show" />
+
+    <EditText
+        android:id="@+id/edt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:ems="10"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:hint="Ex. Avengers"
+        android:inputType="text"
+        android:maxLength="40"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:text="Genre"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Spinner
+        android:id="@+id/spinner_genre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:animateLayoutChanges="true"
+        android:entries="@array/spinnerGenreItems"
+        android:gravity="center"
+        android:prompt="@string/genre_prompt"
+        android:spinnerMode="dialog"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:text="Language"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <Spinner
+        android:id="@+id/spinner_language"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:animateLayoutChanges="true"
+        android:entries="@array/spinnerLanguageItems"
+        android:gravity="center"
+        android:popupBackground="@android:color/holo_blue_light"
+        android:prompt="@string/language_prompt"
+        android:spinnerMode="dialog"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:text="Runtime"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <EditText
+        android:id="@+id/edt_runtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:hint="(in mins)"
+        android:inputType="number"
+        android:maxLength="3" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:text="Rating"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <RatingBar
+        android:id="@+id/rbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginBottom="@dimen/item_margin"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="Add"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+</LinearLayout>
